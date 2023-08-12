@@ -5,6 +5,7 @@ Objective:
 To build an application that is able to classify news articles to be as fake or real/original through the learning it got from the datasets being provided to it.
 
 Methodology:
+
 ![image](https://github.com/divyaaxyz/fake_news_detection/assets/106904445/088be81d-d370-43e6-b719-63408c2478ec)
 
 Result:
