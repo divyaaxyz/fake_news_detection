@@ -1,0 +1,20 @@
+METHODOLOGY USED:
+
+In this project, we will be dealing with textual data.
+We need to collect the news data, the data we are going to use is basically a labelled data set so it consists of several thousands of news articles and it will be labelled as either it is real news or fake news. 
+The news data will consists of several details about the news such as author of that particular news, title of the news, text etc.
+
+In this project, we will be dealing with textual data.
+We need to collect the news data, the data we are going to use is basically a labelled data set so it consists of several thousands of news articles and it will be labelled as either it is a real news or a fake news. 
+The news data will consists of several details about the news such as author of that particular news, title of the news, text etc.
+Once we have this dataset we need to pre-process this data, a lot of work needs to be done in this pre-processing step, when compared to the numerical data because computers and systems do not understand text and characters, they just understand numbers so we need to find some suitable way to convert this text present in the news to meaningful numbers that the machine can understand. So we will perform various steps in this data pre-processing part.
+For example, we will apply stop words function to our news data to filter out some high frequency words like articles, prepositions, pronouns, conjunctions, etc.  
+We will also perform stemming in our data. Stemming is a natural language processing technique that lowers the infection in words to their root forms, hence aiding in pre-processing of text, words, and documents for text normalization. 
+Next step in pre-processing is to convert the text into meaningful data that the computer can understand. This can be achieved by using Vectorization. The idea is to get the some distinct features out of the text for the model to train on, by converting text to numerical vectors which our computer/system can understand.
+VECTORIZING DATA:
+Vectorizing is the process of encoding text as integers i.e. numeric form to create feature vectors so that machine learning algorithms can understand our data.
+ TF-IDF: It computes relative frequency that a word appears in a document compared to its frequency across all documents TF-IDF weight represents the relative importance of a term in the document and entire corpus . TF stands for Term Frequency: It calculates how frequently a term appears in a document. Since, every document size varies, a term may appear more in a long sized document that a short one. Thus, the length of the document often divides Term frequency.
+
+IDF stands for Inverse Document Frequency: A word is not of much use if it is present in all the documents. Certain terms like ―”a”, ”an”, ”the”, ”on”, ”of” etc. appear many times in a document but are of little importance. IDF weighs down the importance of these terms and increase the importance of rare ones. The more the value of IDF, the more unique is the word.  TF-IDF is applied on the body text, so the relative count of each word in the sentences is stored in the document matrix. 
+Once the pre-processing is done, we need to split the dataset into Training and Testing data wherein, most of the data is used for training, and a smaller portion of the data is used for mining.
+This pre-processed data is now fed to our machine learning models .In this project, we will be using a number machine learning models which would be best suited for BINARY CLASSIFICATION. As this is a binary classification project which means we are going to classify the results into two types, it is either real or fake news. On training our machine learning models, we will get a trained model, we will do all our evaluations on this trained model.
