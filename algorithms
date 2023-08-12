@@ -1,0 +1,30 @@
+# About the algorithms used in the project
+
+(a)	Naïve Bayes Classifier:
+
+This classification technique is based on Bayes theorem, which assumes that the presence of a particular feature in a class is independent of the presence of any other feature. It provides way for calculating the posterior probability.
+P(X) = P(c) × P(c)/P(X) -----(1)
+ P(c|X) = Posterior probability of class given predictor
+ P(c) = Prior probability of class 
+ P(X|c) = likelihood (probability of predictor given class)
+ P(X) = prior probability of predictor
+
+(b)	Logistic Regression:
+
+It is a classification not a regression algorithm. It is used to estimate discrete values (Binary values like 0/1, yes/no, true/false) based on given set of independent variable(s). In simple words, it predicts the probability of occurrence of an event by fitting data to a logit function. Hence, it is also known as logit regression. Since, it predicts the probability, its output lies between 0 and 1 (as expected).
+
+(c)	Random Forest:
+
+ Random Forest is a trademark term for an ensemble of decision trees. In Random Forest, we‘ve collection of decision trees (so known as ―Forest). To classify a new object based on attributes, each tree gives a classification and we say the tree ―votes for that class. The forest chooses the classification having the most votes (over all the trees in the forest). The random forest is a classification algorithm consisting of many decisions trees. It uses bagging and feature randomness when building each individual tree to try to create an uncorrelated forest of trees whose prediction by committee is more accurate than that of any individual tree. Random forest, like its name implies, consists of a large number of individual decision trees that operate as an ensemble. Each individual tree in the random forest spits out a class prediction and the class with the most votes becomes our model‘s prediction. The reason that the random forest model works so well is: A large number of relatively uncorrelated models (trees) operating as a committee will outperform any of the individual constituent models. So how does random forest ensure that the behaviour of each individual tree is not too correlated with the behaviour of any of the other trees in the model? It uses the following two methods:
+ Bagging (Bootstrap Aggregation) — Decisions trees are very sensitive to the data they are trained on — small changes to the training set can result in significantly different tree structures. Random forest takes advantage of this by allowing each individual tree to randomly sample from the dataset with replacement, resulting in different trees. This process is known as bagging or bootstrapping. 
+ Feature Randomness — In a normal decision tree, when it is time to split a node, we consider every possible feature and pick the one that produces the most separation between the observations in the left node vs. those in the right node. In contrast, each tree in a random forest can pick only from a random subset of features. This forces even more variation amongst the trees in the model and ultimately results in lower correlation across trees and more diversification.
+
+(d)	Decision Tree:
+
+Decision Tree is a Supervised learning technique that can be used for both classification and Regression problems, but mostly it is preferred for solving Classification problems. It is a tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules and each leaf node represents the outcome.
+In a Decision tree, there are two nodes, which are the Decision Node and Leaf Node. Decision nodes are used to make any decision and have multiple branches, whereas Leaf nodes are the output of those decisions and do not contain any further branches.
+The decisions or the test are performed on the basis of features of the given dataset.
+It is a graphical representation for getting all the possible solutions to a problem/decision based on given conditions.
+It is called a decision tree because, similar to a tree, it starts with the root node, which expands on further branches and constructs a tree-like structure.
+In order to build a tree, we use the CART algorithm, which stands for Classification and Regression Tree algorithm.
+A decision tree simply asks a question, and based on the answer (Yes/No), it further split the tree into sub trees.
