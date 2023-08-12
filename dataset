@@ -1,0 +1,17 @@
+ # Dataset Description
+The dataset has more than 20,000 news articles. 
+
+Attributes:
+1) id: unique id for a news article
+2) title: the title of a news article
+3) author: author of the news article
+4) text: the text of the article; could be incomplete
+5) label: a label that marks the article as potentially unreliable
+   1: unreliable
+   0: reliable
+
+The dataset was taken from kaggle containing the above 5 attributes.
+It was extracted from four or five other datasets available on Kaggle itself. 
+
+Link to the dataset:
+https://www.kaggle.com/c/fake-news/data?select=train.csv
